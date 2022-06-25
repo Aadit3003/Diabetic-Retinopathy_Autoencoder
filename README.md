@@ -1,33 +1,55 @@
 # Autoencoder-based Feature Selection for Diabetic Retinopathy Risk Factors
-This project was done under the guidance of Dr Sundaresan Raman, BITS Pilani, as part of the course CS F376 (Design Oriented Project) in the Second Semester of AY 21-22.
+This project was done under the guidance of Dr. Sundaresan Raman, BITS Pilani, as part of the course CS F376 (Design Oriented Project) in the Second Semester of AY 21-22.
 
 ## Brief Description
-We implemented a Naive Bayes (NB) Sentiment Classifier for Short-form text messages (Tweets), to classify them into binary (mutually exclusive) categories: Positive or Negative.
+We explored three methods to identify certain Risk factors for Diabetic Retinopathy (DR) of Primary or Secondary Importance. Of these 3 approaches, we found most success with the Autoencoder using the SN-DREAMS dataset for DR.
 
-## Description
+## Dataset
+The SN-DREAMS dataset ([Dataset Link](https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/2006d6796ba2008d573f280a57f0b5a523eb46f5/Modified.csv)) contains 13 risk factors (columns) and the 14th column as an indicator of DR. Of these 13, 4 factors are categorical, while 9 are continuous. This data is available for 1555 patients (rows). However, the data is imablanced, since rows with DR = 1 are sparse. To combat this SMOTE-ENN and standardization are used.
 
-- <em><b>Dataset</b></em>: 
-- <em><b>Preprocessing</b></em>: 
-- <em><b>Training</b></em>:
-- <em><b>Visualization</b></em>: 
-- <em><b>Results</b></em>:
+Furthermore, we use Expert-Labeled Primary/Secondary clusters ([File Link](https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/2006d6796ba2008d573f280a57f0b5a523eb46f5/Actual.xlsx)) as the 'Gold-Truth' to evaluate the results from each approach.
 
-<img src="https://github.com/Aadit3003/Twitter-Sentiment-Polarity-Analysis/blob/5031f72d5cc1560be4edc5947e48a8733c06bda9/Assets/Sentiment%20140%20Dataset.png"><br>
+## Attempt 1: Classification
+Diagram, Result
+<p float="left">
+  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/2006d6796ba2008d573f280a57f0b5a523eb46f5/Assets/Clustering.png" width="480" />
+  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/2006d6796ba2008d573f280a57f0b5a523eb46f5/Assets/Clustering.png" width="480" /> 
+</p>
+<em><b>K-Means Clustering and resulting Confusion Matrix</b></em>
+
+## Attempt 2: Clustering
+<p float="left">
+  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/2006d6796ba2008d573f280a57f0b5a523eb46f5/Assets/KNN%20Classification%20ROC.png" width="480" />
+  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/bdc1feb325637a8a018daf9182ab96320e771386/Assets/2_Results.png" width="480" /> 
+</p>
+<em><b>KNN Classification and resulting Confusion Matrix</b></em>
+
+## Attempt 3: Autoencoder
+<p float="left">
+  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/bdc1feb325637a8a018daf9182ab96320e771386/Assets/3_Autoencoder%20Structure.png" width="480" />
+  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/bdc1feb325637a8a018daf9182ab96320e771386/Assets/3_Results.png" width="480" /> 
+</p>
+<em><b>KNN Classification and resulting Confusion Matrix</b></em>
+
+
+<img src=""><br>
 <em><b>Sentiment140 Dataset, from Kaggle</b></em>
 
-<img src="https://github.com/Aadit3003/Twitter-Sentiment-Polarity-Analysis/blob/5031f72d5cc1560be4edc5947e48a8733c06bda9/Assets/3D%20Embedding%20TSNE.png">
+<img src="">
 <em><b>TSNE Visualization in 3D Space</b></em>
 
 
 
 ## Installation and Use
 
-A prediction tool was built using the aforementioned Naive Bayes Classifier. It takes a user tweet as input and then predicts the tweet to have either Positive sentiment, or negative sentiment. The simple python GUI also offers choice of Naive Bayes model (Multinomial or Bernoulli), and whether the user wants to apply feature selection (Chi-Square feature selection or None at all). Some sample results are shown below:
+Comparison Table
+CSV Files
+Different Dataset: What to change
 
-<img src="https://github.com/Aadit3003/Twitter-Sentiment-Polarity-Analysis/blob/cf1829c9a60dac7fe07baebb32fae004e26d4d07/Assets/Positive%20Tweet.png" width = "512"><br>
+<img src="" width = "512"><br>
 <em><b>Positive Tweet</b></em><br>
 
-<img src="https://github.com/Aadit3003/Twitter-Sentiment-Polarity-Analysis/blob/cf1829c9a60dac7fe07baebb32fae004e26d4d07/Assets/Negative%20Tweet.png" width = "512"><br>
+<img src="" width = "512"><br>
 <em><b>Negative Tweet</b></em>
 
 ## References
