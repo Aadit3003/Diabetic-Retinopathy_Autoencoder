@@ -13,7 +13,7 @@ Furthermore, we use Expert-Labeled Primary/Secondary clusters ([File Link](https
 The first approach was simply to use K-Means Clustering (k=2, Initialization= k-means++) from the sklearn library. Further, T-SNE was also used for visualization (See below). However, nearly half the predictions were wrong and the classification didn't match the True labels.
 <p float="left">
   <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/2006d6796ba2008d573f280a57f0b5a523eb46f5/Assets/Clustering.png" width="380" />
-  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/b58fc6765adc889079e409f70c35c8855847e601/Assets/1_Results.png" width="460" /> 
+  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/b58fc6765adc889079e409f70c35c8855847e601/Assets/1_Results.png" width="400" /> 
 </p>
 <em><b>K-Means Clustering and the resulting Confusion Matrix</b></em>
 
@@ -38,7 +38,7 @@ Again, we used a 70:30 Train Test split and Standard Scaler. The Autoencoder had
 
 
 <p float="left">
-  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/6e1e0aa60309dc71de149cdae4fb1471a39befd5/Assets/3_Autoencoder.png" width="560" />
+  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/6e1e0aa60309dc71de149cdae4fb1471a39befd5/Assets/3_Autoencoder.png" width="520" />
   <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/b58fc6765adc889079e409f70c35c8855847e601/Assets/3_Results.png" width="400" /> 
 </p><br>
 <em><b>Autoencoder Approach and the resulting Confusion Matrix</b></em>
