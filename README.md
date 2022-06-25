@@ -27,25 +27,24 @@ We used a 70:30 Train-Test split and KNN classification (k=5, Minkowski Distance
 
 ## Attempt 3: Autoencoder
 
-Again, we used a 70:30 Train Test split and Standard Scaler. The Autoencoder had 2 Fully Connected (Dense) layers. These were the Code layer with 7 neurons and the Output layer with 14 neurons. Ultimately, the neural network had 217 parameters in total.
+Again, we used a 70:30 Train Test split and Standard Scaler. The Autoencoder had 2 Fully Connected (Dense) layers. These were the Code layer with 7 neurons and the Output layer with 14 neurons. Ultimately, the neural network had 217 parameters in total. The Autoencoder was trained using the Adam Optimizer for 15 epochs using Mmean Absolute Error as the metric.
 <p float="left">
   <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/b58fc6765adc889079e409f70c35c8855847e601/Assets/3_Autoencoder%20Parameters.png" width="480" /> 
-  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/b58fc6765adc889079e409f70c35c8855847e601/Assets/3_Autoencoder%20Structure.png" width="200" />
-</p><br>
+  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/b58fc6765adc889079e409f70c35c8855847e601/Assets/3_Autoencoder%20Structure.png" width="200" /><br>
+</p>
 <em><b>Autoencoder Structure and Parameters</b></em><br>
+<br>
+<br>
+
+The weights learnt by the Hidden (Code) Layer were used to assign a score to each of the 13 risk factors. The median of these scores was used as a threshold and the factors with scores above it were assigned "Primary" and the others were "Secondary", as shown below. Since the training process is non-deterministic, there was variation in the results. On a good run, 9 or 10 of the risk factors are classified correctly. These weights could be saved and reloaded, rather than train the neural network each time.
+<br>
+<br>
 
 
-
-
-<p float="centre">
-  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/6e1e0aa60309dc71de149cdae4fb1471a39befd5/Assets/3_Autoencoder.png" width="560" />
-</p><br>
-<em><b>Autoencoder Approach and the resulting Confusion Matrix</b></em>
-
-
-
-
-## Installation and Use
+<p align="center">
+  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/6e1e0aa60309dc71de149cdae4fb1471a39befd5/Assets/3_Autoencoder.png" width="640" /><br>
+</p>
+<em><b>Autoencoder Feature Selection </b>(Incorrect classifications in red)</em>
 
 ## References
 - <em>Khalid, S., Prieto-Alhambra, D. Machine Learning for Feature Selection and Cluster Analysis in Drug Utilisation Research. Curr Epidemiol Rep 6, 364–372 (2019).</em> ([Paper Link](https://rdcu.be/cQnva))
