@@ -13,30 +13,34 @@ Furthermore, we use Expert-Labeled Primary/Secondary clusters ([File Link](https
 Diagram, Result
 <p float="left">
   <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/2006d6796ba2008d573f280a57f0b5a523eb46f5/Assets/Clustering.png" width="480" />
-  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/2006d6796ba2008d573f280a57f0b5a523eb46f5/Assets/Clustering.png" width="480" /> 
+  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/b58fc6765adc889079e409f70c35c8855847e601/Assets/1_Results.png" width="480" /> 
 </p>
-<em><b>K-Means Clustering and resulting Confusion Matrix</b></em>
+<em><b>K-Means Clustering and the resulting Confusion Matrix</b></em>
 
-## Attempt 2: Clustering
+## Attempt 2: Classification
 <p float="left">
-  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/2006d6796ba2008d573f280a57f0b5a523eb46f5/Assets/KNN%20Classification%20ROC.png" width="480" />
-  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/bdc1feb325637a8a018daf9182ab96320e771386/Assets/2_Results.png" width="480" /> 
+  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/2006d6796ba2008d573f280a57f0b5a523eb46f5/Assets/KNN%20Classification%20ROC.png" width="400" />
+  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/b58fc6765adc889079e409f70c35c8855847e601/Assets/2_Results.png" width="480" /> 
 </p>
-<em><b>KNN Classification and resulting Confusion Matrix</b></em>
+<em><b>KNN Classification and the resulting Confusion Matrix</b></em>
 
 ## Attempt 3: Autoencoder
+
 <p float="left">
-  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/bdc1feb325637a8a018daf9182ab96320e771386/Assets/3_Autoencoder%20Structure.png" width="480" />
-  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/bdc1feb325637a8a018daf9182ab96320e771386/Assets/3_Results.png" width="480" /> 
-</p>
-<em><b>KNN Classification and resulting Confusion Matrix</b></em>
+  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/b58fc6765adc889079e409f70c35c8855847e601/Assets/3_Autoencoder%20Parameters.png" width="480" /> 
+  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/b58fc6765adc889079e409f70c35c8855847e601/Assets/3_Autoencoder%20Structure.png" width="200" />
+</p><br>
+<em><b>Autoencoder Structure and Parameters</b></em><br>
 
 
-<img src=""><br>
-<em><b>Sentiment140 Dataset, from Kaggle</b></em>
 
-<img src="">
-<em><b>TSNE Visualization in 3D Space</b></em>
+
+<p float="left">
+  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/6e1e0aa60309dc71de149cdae4fb1471a39befd5/Assets/3_Autoencoder.png" width="560" />
+  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/b58fc6765adc889079e409f70c35c8855847e601/Assets/3_Results.png" width="440" /> 
+</p><br>
+<em><b>Autoencoder Approach and the resulting Confusion Matrix</b></em>
+
 
 
 
