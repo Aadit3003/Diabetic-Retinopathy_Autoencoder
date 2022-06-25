@@ -9,23 +9,25 @@ The SN-DREAMS dataset ([Dataset Link](https://github.com/Aadit3003/Diabetic-Reti
 
 Furthermore, we use Expert-Labeled Primary/Secondary clusters ([File Link](https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/2006d6796ba2008d573f280a57f0b5a523eb46f5/Actual.xlsx)) as the 'Gold-Truth' to evaluate the results from each approach.
 
-## Attempt 1: Classification
-Diagram, Result
+## Attempt 1: Clustering
+The first approach was simply to use K-Means Clustering (k=2, Initialization= k-means++) from the sklearn library. Further, T-SNE was also used for visualization (See below). However, nearly half the predictions were wrong and the classification didn't match the True labels.
 <p float="left">
-  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/2006d6796ba2008d573f280a57f0b5a523eb46f5/Assets/Clustering.png" width="480" />
-  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/b58fc6765adc889079e409f70c35c8855847e601/Assets/1_Results.png" width="480" /> 
+  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/2006d6796ba2008d573f280a57f0b5a523eb46f5/Assets/Clustering.png" width="400" />
+  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/b58fc6765adc889079e409f70c35c8855847e601/Assets/1_Results.png" width="460" /> 
 </p>
 <em><b>K-Means Clustering and the resulting Confusion Matrix</b></em>
 
 ## Attempt 2: Classification
+We used a 70:30 Train-Test split and KNN classification (k=5, Minkowski Distance). We used the ROC-AUC Scores of each of the 13 features as a metric. If the score lied above a threshold, the cluster was classified as primary, else it was classified as secondary. However, 8 of the 13 predictions were incorrect.
 <p float="left">
-  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/2006d6796ba2008d573f280a57f0b5a523eb46f5/Assets/KNN%20Classification%20ROC.png" width="400" />
-  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/b58fc6765adc889079e409f70c35c8855847e601/Assets/2_Results.png" width="480" /> 
+  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/2006d6796ba2008d573f280a57f0b5a523eb46f5/Assets/KNN%20Classification%20ROC.png" width="360" />
+  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/b58fc6765adc889079e409f70c35c8855847e601/Assets/2_Results.png" width="460" /> 
 </p>
 <em><b>KNN Classification and the resulting Confusion Matrix</b></em>
 
 ## Attempt 3: Autoencoder
 
+Again, we used a 70:30 Train Test split and Standard Scaler. The Autoencoder had 2 Fully Connected (Dense) layers. These were the Code layer with 7 neurons and the Output layer with 14 neurons. Ultimately, the neural network had 217 parameters in total.
 <p float="left">
   <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/b58fc6765adc889079e409f70c35c8855847e601/Assets/3_Autoencoder%20Parameters.png" width="480" /> 
   <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/b58fc6765adc889079e409f70c35c8855847e601/Assets/3_Autoencoder%20Structure.png" width="200" />
@@ -45,16 +47,6 @@ Diagram, Result
 
 
 ## Installation and Use
-
-Comparison Table
-CSV Files
-Different Dataset: What to change
-
-<img src="" width = "512"><br>
-<em><b>Positive Tweet</b></em><br>
-
-<img src="" width = "512"><br>
-<em><b>Negative Tweet</b></em>
 
 ## References
 - <em>Khalid, S., Prieto-Alhambra, D. Machine Learning for Feature Selection and Cluster Analysis in Drug Utilisation Research. Curr Epidemiol Rep 6, 364–372 (2019).</em> ([Paper Link](https://rdcu.be/cQnva))
