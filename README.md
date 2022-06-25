@@ -38,7 +38,7 @@ Again, we used a 70:30 Train Test split and Standard Scaler. The Autoencoder had
 
 
 <p float="left">
-  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/6e1e0aa60309dc71de149cdae4fb1471a39befd5/Assets/3_Autoencoder.png" width="520" />
+  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/6e1e0aa60309dc71de149cdae4fb1471a39befd5/Assets/3_Autoencoder.png" width="500" />
   <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/b58fc6765adc889079e409f70c35c8855847e601/Assets/3_Results.png" width="400" /> 
 </p><br>
 <em><b>Autoencoder Approach and the resulting Confusion Matrix</b></em>
