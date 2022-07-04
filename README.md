@@ -42,7 +42,7 @@ The weights learnt by the Hidden (Code) Layer were used to assign a score to eac
 
 
 <p align="center">
-  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/6e1e0aa60309dc71de149cdae4fb1471a39befd5/Assets/3_Autoencoder.png" width="640" /><br>
+  <img src="https://github.com/Aadit3003/Diabetic-Retinopathy_Autoencoder/blob/5837233bc5e9792714f8ae32cbb53a9b75b0928e/Assets/3_Autoencoder.png" width="640" /><br>
 </p>
 <em><b>Autoencoder Feature Selection </b>(Incorrect classifications in red)</em>
 
